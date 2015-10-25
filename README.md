@@ -32,4 +32,6 @@ This project uses Spring Boot and Maven. To run locally, type:
 
 Test the native JSON query with cURL:
 
-`curl --user user:secret http://localhost:8080/users/search/findUsersByHobby?hobby=reading`
+```bash
+curl --user user:secret http://localhost:8080/users/search/findUsersByHobby?hobby=reading
+```
