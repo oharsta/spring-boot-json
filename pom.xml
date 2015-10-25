@@ -17,7 +17,7 @@
         <relativePath/>
     </parent>
 
-<properties>
+    <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
         <httpclient.version>4.4</httpclient.version>
@@ -44,17 +44,26 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
-<dependency>
+        <dependency>
+            <groupId>com.zaxxer</groupId>
+            <artifactId>HikariCP</artifactId>
+            <version>2.4.1</version>
+        </dependency>
+        <dependency>
             <groupId>org.flywaydb</groupId>
             <artifactId>flyway-core</artifactId>
             <version>${flyway.version}</version>
         </dependency>
         <dependency>
-    <groupId>postgresql</groupId>
-    <artifactId>postgresql</artifactId>
-    <version>9.1-901-1.jdbc4</version>
-</dependency>
-         <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-rest</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.impossibl.pgjdbc-ng</groupId>
+            <artifactId>pgjdbc-ng</artifactId>
+            <version>0.0.2</version>
+        </dependency>
+        <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
             <version>${httpclient.version}</version>
@@ -75,7 +84,7 @@
             <version>2.0.2-beta</version>
             <scope>test</scope>
         </dependency>
-        </dependencies>
+    </dependencies>
     <build>
         <plugins>
             <plugin>
@@ -114,9 +123,9 @@
                 <artifactId>versions-maven-plugin</artifactId>
                 <version>2.1</version>
             </plugin>
-            
+
 
         </plugins>
-        
+
     </build>
 </project>
