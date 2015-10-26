@@ -1,11 +1,20 @@
 package sbje.domain;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class UserData {
+public class UserData implements Serializable {
 
   private String name;
   private List<String> hobbies;
+
+  public UserData() {
+  }
+
+  public UserData(String name, List<String> hobbies) {
+    this.name = name;
+    this.hobbies = hobbies;
+  }
 
   public String getName() {
     return name;

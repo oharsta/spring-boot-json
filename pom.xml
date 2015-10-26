@@ -58,10 +58,15 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-rest</artifactId>
         </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.impossibl.pgjdbc-ng</groupId>-->
+            <!--<artifactId>pgjdbc-ng</artifactId>-->
+            <!--<version>0.0.2</version>-->
+        <!--</dependency>-->
         <dependency>
-            <groupId>com.impossibl.pgjdbc-ng</groupId>
-            <artifactId>pgjdbc-ng</artifactId>
-            <version>0.0.2</version>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>9.4-1204-jdbc42</version>
         </dependency>
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
@@ -83,6 +88,11 @@
             <artifactId>wiremock</artifactId>
             <version>2.0.2-beta</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
         </dependency>
     </dependencies>
     <build>

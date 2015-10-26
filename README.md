@@ -30,8 +30,9 @@ This project uses Spring Boot and Maven. To run locally, type:
 
 ### Testing
 
-Test the native JSON query with cURL:
+There are integration tests and you can test the server from the command line with cURL:
 
 ```bash
+mvn spring-boot:run -Drun.jvmArguments="-Dspring.profiles.active=test"
 curl --user user:secret http://localhost:8080/users/search/findUsersByHobby?hobby=reading
 ```
