@@ -33,7 +33,6 @@ public class UserRepositoryTest {
     User user = userRepository.findUsersByHobby("reading").get(0);
     user.getData().setName("changed");
     userRepository.saveAndFlush(user);
-
     User savedUser = userRepository.findOne(user.getId());
     assertEquals("changed", savedUser.getData().getName());
   }
